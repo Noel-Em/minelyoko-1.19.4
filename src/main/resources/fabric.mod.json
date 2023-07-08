@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "minelyoko",
+	"version": "${version}",
+	"name": "MineLyoko",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"NoelEm"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT License",
+	"icon": "assets/minelyoko/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "com.noelem.minelyoko.MineLyoko"
+		],
+		"client": [
+			"com.noelem.minelyoko.MineLyokoClient"
+		],
+		"fabric-datagen": [
+			"com.noelem.minelyoko.ExampleModDataGenerator"
+		]
+	},
+	"mixins": [
+		"minelyoko.mixins.json",
+		{
+			"config": "minelyoko.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.19.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
