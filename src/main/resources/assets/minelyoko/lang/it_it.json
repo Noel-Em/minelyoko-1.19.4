@@ -1,4 +1,7 @@
 {
   "item.minelyoko.camera" : "Videocamera",
-  "item.minelyoko.cellphone" : "Cellulare"
+  "item.minelyoko.cellphone" : "Cellulare",
+  "item.minelyoko.uranium" : "Uranio",
+
+  "block.minelyoko.uranium_ore": "Blocco di Uranio Grezzo"
 }

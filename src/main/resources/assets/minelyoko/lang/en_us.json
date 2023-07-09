@@ -1,4 +1,7 @@
 {
   "item.minelyoko.camera" : "Camera",
-  "item.minelyoko.cellphone" : "Cellphone"
+  "item.minelyoko.cellphone" : "Cellphone",
+  "item.minelyoko.uranium" : "Uranium",
+
+  "block.minelyoko.uranium_ore": "Uranium Ore"
 }
