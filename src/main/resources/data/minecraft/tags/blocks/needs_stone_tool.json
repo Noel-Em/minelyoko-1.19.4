@@ -1,7 +1,6 @@
 {
   "replace": false,
   "values" : [
-    "minelyoko:uranium_ore",
     "minelyoko:aluminum_ore"
   ]
 }

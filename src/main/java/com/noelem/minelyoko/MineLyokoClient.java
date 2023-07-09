@@ -39,16 +39,19 @@ public class MineLyokoClient implements ClientModInitializer {
 
     /* ################ ITEMS ################ */
 
+    public static final Item URANIUM = new CustomItem().registerItem(MineLyoko.MOD_ID, "uranium",
+            new FabricItemSettings().maxCount(64), ITEM_GROUP);
+
+    public static final Item RAW_ALUMINUM = new CustomItem().registerItem(MineLyoko.MOD_ID, "raw_aluminum",
+            new FabricItemSettings().maxCount(64), ITEM_GROUP);
+
+    public static final Item ALUMINUM_INGOT = new CustomItem().registerItem(MineLyoko.MOD_ID, "aluminum_ingot",
+            new FabricItemSettings().maxCount(64), ITEM_GROUP);
+
     public static final Item CAMERA = new CustomItem().registerItem(MineLyoko.MOD_ID, "camera",
             new FabricItemSettings().maxCount(1), ITEM_GROUP);
 
     public static final Item CELLPHONE = new CustomItem().registerItem(MineLyoko.MOD_ID, "cellphone",
-            new FabricItemSettings().maxCount(64), ITEM_GROUP);
-
-    public static final Item URANIUM = new CustomItem().registerItem(MineLyoko.MOD_ID, "uranium",
-            new FabricItemSettings().maxCount(64), ITEM_GROUP);
-
-    public static final Item SCANNER = new CustomItem().registerItem(MineLyoko.MOD_ID, "scanner",
             new FabricItemSettings().maxCount(64), ITEM_GROUP);
 
     public static final Item STUFFED_BEAR = new CustomItem().registerItem(MineLyoko.MOD_ID, "stuffed_bear",
@@ -59,5 +62,8 @@ public class MineLyokoClient implements ClientModInitializer {
 
     public static final Block URANIUM_ORE = new CustomBlock().registerBlock(MineLyoko.MOD_ID, "uranium_ore",
             FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool(), BLOCK_GROUP);
+
+    public static final Block ALUMINUM_ORE = new CustomBlock().registerBlock(MineLyoko.MOD_ID, "aluminum_ore",
+            FabricBlockSettings.of(Material.STONE).strength(1f).requiresTool(), BLOCK_GROUP);
 
 }

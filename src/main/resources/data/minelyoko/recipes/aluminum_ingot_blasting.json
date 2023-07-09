@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "cookingtime": 300,
+  "experience": 0.4,
+  "ingredient": {
+    "item": "minelyoko:raw_aluminum"
+  },
+  "result": "minelyoko:aluminum_ingot"
+}

@@ -2,6 +2,11 @@
   "item.minelyoko.camera" : "Camera",
   "item.minelyoko.cellphone" : "Cellphone",
   "item.minelyoko.uranium" : "Uranium",
+  "item.minelyoko.raw_aluminum" : "Raw Aluminum",
+  "item.minelyoko.aluminum_ingot" : "Aluminum Ingot",
 
-  "block.minelyoko.uranium_ore": "Uranium Ore"
+  "item.minelyoko.stuffed_bear" : "Stuffed Bear",
+
+  "block.minelyoko.uranium_ore": "Uranium Ore",
+  "block.minelyoko.aluminum_ore": "Aluminum Ore"
 }

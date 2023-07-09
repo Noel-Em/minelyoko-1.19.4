@@ -2,6 +2,11 @@
   "item.minelyoko.camera" : "Videocamera",
   "item.minelyoko.cellphone" : "Cellulare",
   "item.minelyoko.uranium" : "Uranio",
+  "item.minelyoko.raw_aluminum" : "Alluminio Grezzo",
+  "item.minelyoko.aluminum_ingot" : "Lingotto di Alluminio",
 
-  "block.minelyoko.uranium_ore": "Blocco di Uranio Grezzo"
+  "item.minelyoko.stuffed_bear" : "Orso di Peluche",
+
+  "block.minelyoko.uranium_ore": "Minerale di Uranio",
+  "block.minelyoko.aluminum_ore": "Minerale di Alluminio"
 }
