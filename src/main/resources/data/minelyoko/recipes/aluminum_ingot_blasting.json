@@ -1,6 +1,6 @@
 {
   "type": "minecraft:blasting",
-  "cookingtime": 300,
+  "cookingtime": 150,
   "experience": 0.4,
   "ingredient": {
     "item": "minelyoko:raw_aluminum"
