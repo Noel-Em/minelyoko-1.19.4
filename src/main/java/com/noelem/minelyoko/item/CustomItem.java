@@ -25,6 +25,14 @@ public class CustomItem {
         return item;
     }
 
+    public Item registerCustomItem(String id, String name, Item customItem, ItemGroup group)
+    {
+        Item item = Registry.register(Registries.ITEM, new Identifier(id, name), customItem);
+        addItemToGroup(group, item);
+
+        return item;
+    }
+
     public static void addItemToGroup(ItemGroup group, Item item)
     {
         ItemGroupEvents.modifyEntriesEvent(group).register(entries -> entries.add(item));

@@ -2,6 +2,7 @@ package com.noelem.minelyoko;
 
 import com.noelem.minelyoko.block.CustomBlock;
 import com.noelem.minelyoko.item.CustomItem;
+import com.noelem.minelyoko.item.custom.UraniumItem;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
@@ -39,8 +40,11 @@ public class MineLyokoClient implements ClientModInitializer {
 
     /* ################ ITEMS ################ */
 
-    public static final Item URANIUM = new CustomItem().registerItem(MineLyoko.MOD_ID, "uranium",
-            new FabricItemSettings().maxCount(64), ITEM_GROUP);
+    public static final Item URANIUM = new CustomItem().registerCustomItem(MineLyoko.MOD_ID, "uranium",
+            new UraniumItem(
+                    new FabricItemSettings().maxCount(64)
+            ),
+            ITEM_GROUP);
 
     public static final Item RAW_ALUMINUM = new CustomItem().registerItem(MineLyoko.MOD_ID, "raw_aluminum",
             new FabricItemSettings().maxCount(64), ITEM_GROUP);
