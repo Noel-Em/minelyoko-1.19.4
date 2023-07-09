@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "minelyoko:uranium"
+    },
+    "title": "I feel it in my bones!",
+    "description": "Obtain uranium for the first time!"
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minelyoko:uranium"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
