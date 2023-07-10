@@ -31,6 +31,11 @@ public class MineLyokoClient implements ClientModInitializer {
             .displayName(Text.translatable("Lyoko Blocks"))
             .build();
 
+    private static final ItemGroup TECH_GROUP = FabricItemGroup.builder(new Identifier(MineLyoko.MOD_ID, "lyoko_tech"))
+            .icon(() -> new ItemStack(MineLyokoClient.COPPER_WIRE))
+            .displayName(Text.translatable("Lyoko Tech"))
+            .build();
+
     @Override
     public void onInitializeClient() {
         System.out.println("Mod Client initialized");
@@ -46,11 +51,27 @@ public class MineLyokoClient implements ClientModInitializer {
             ),
             ITEM_GROUP);
 
+    public static final Item URANIUM_BATTERY = new CustomItem().registerItem(MineLyoko.MOD_ID, "uranium_battery",
+            new FabricItemSettings().maxCount(1), ITEM_GROUP);
+
+
     public static final Item RAW_ALUMINUM = new CustomItem().registerItem(MineLyoko.MOD_ID, "raw_aluminum",
             new FabricItemSettings().maxCount(64), ITEM_GROUP);
 
     public static final Item ALUMINUM_INGOT = new CustomItem().registerItem(MineLyoko.MOD_ID, "aluminum_ingot",
             new FabricItemSettings().maxCount(64), ITEM_GROUP);
+
+    public static final Item COPPER_WIRE = new CustomItem().registerItem(MineLyoko.MOD_ID, "copper_wire",
+            new FabricItemSettings().maxCount(64), TECH_GROUP);
+
+    public static final Item STATOR = new CustomItem().registerItem(MineLyoko.MOD_ID, "stator",
+            new FabricItemSettings().maxCount(64), TECH_GROUP);
+
+    public static final Item ROTOR = new CustomItem().registerItem(MineLyoko.MOD_ID, "rotor",
+            new FabricItemSettings().maxCount(64), TECH_GROUP);
+
+    public static final Item MOTOR = new CustomItem().registerItem(MineLyoko.MOD_ID, "motor",
+            new FabricItemSettings().maxCount(64), TECH_GROUP);
 
     public static final Item CAMERA = new CustomItem().registerItem(MineLyoko.MOD_ID, "camera",
             new FabricItemSettings().maxCount(1), ITEM_GROUP);

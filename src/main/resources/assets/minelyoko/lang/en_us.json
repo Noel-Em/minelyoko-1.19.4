@@ -4,8 +4,13 @@
   "item.minelyoko.uranium" : "Uranium",
   "item.minelyoko.raw_aluminum" : "Raw Aluminum",
   "item.minelyoko.aluminum_ingot" : "Aluminum Ingot",
-
   "item.minelyoko.stuffed_bear" : "Stuffed Bear",
+  "item.minelyoko.copper_wire" : "Copper Wire",
+  "item.minelyoko.stator" : "Stator",
+  "item.minelyoko.rotor" : "Rotor",
+  "item.minelyoko.motor" : "Motor",
+
+  "item.minelyoko.uranium_battery": "Uranium Battery",
 
   "block.minelyoko.uranium_ore": "Uranium Ore",
   "block.minelyoko.aluminum_ore": "Aluminum Ore"

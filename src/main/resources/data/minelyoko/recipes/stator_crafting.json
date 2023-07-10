@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ACA",
+    "CRC",
+    "ACA"
+  ],
+  "key": {
+    "C": {
+      "item": "minelyoko:copper_wire"
+    },
+    "A": {
+      "item": "minelyoko:aluminum_ingot"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "result": {
+    "item": "minelyoko:stator",
+    "count": 1
+  }
+}

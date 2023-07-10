@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "minelyoko:uranium_battery"
+    },
+    "title": "Unstable Material: Controlled",
+    "description": "Make an Uranium Battery"
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minelyoko:uranium_battery"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

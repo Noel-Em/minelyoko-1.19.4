@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " R ",
+    "ASA",
+    "AAA"
+  ],
+  "key": {
+    "R": {
+      "item": "minelyoko:rotor"
+    },
+    "A": {
+      "item": "minelyoko:aluminum_ingot"
+    },
+    "S": {
+      "item": "minelyoko:stator"
+    }
+  },
+  "result": {
+    "item": "minelyoko:motor",
+    "count": 1
+  }
+}

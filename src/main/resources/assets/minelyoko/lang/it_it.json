@@ -4,8 +4,13 @@
   "item.minelyoko.uranium" : "Uranio",
   "item.minelyoko.raw_aluminum" : "Alluminio Grezzo",
   "item.minelyoko.aluminum_ingot" : "Lingotto di Alluminio",
-
   "item.minelyoko.stuffed_bear" : "Orso di Peluche",
+  "item.minelyoko.copper_wire" : "Filo di Rame",
+  "item.minelyoko.stator" : "Statore",
+  "item.minelyoko.rotor" : "Rotore",
+  "item.minelyoko.motor" : "Motore",
+
+  "item.minelyoko.uranium_battery": "Batteria di Uranio",
 
   "block.minelyoko.uranium_ore": "Minerale di Uranio",
   "block.minelyoko.aluminum_ore": "Minerale di Alluminio"
