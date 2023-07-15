@@ -43,7 +43,7 @@ public class UraniumItem extends Item {
                             i.getItem().toString() != "diamond_boots" &&
                             i.getItem().toString() != "diamond_helmet")
                     {
-                        livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 1200));
+                        livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 600));
                         livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.POISON, 200, 4));
                     }
                 }

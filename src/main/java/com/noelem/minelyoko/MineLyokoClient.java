@@ -4,6 +4,7 @@ import com.noelem.minelyoko.block.CustomBlock;
 import com.noelem.minelyoko.item.CustomItem;
 import com.noelem.minelyoko.item.custom.UraniumItem;
 import net.fabricmc.api.ClientModInitializer;
+import net.fabricmc.fabric.api.biome.v1.BiomeModification;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -16,8 +17,11 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
+import net.minecraft.world.gen.feature.PlacedFeature;
 
 public class MineLyokoClient implements ClientModInitializer {
 
@@ -88,7 +92,11 @@ public class MineLyokoClient implements ClientModInitializer {
     public static final Block URANIUM_ORE = new CustomBlock().registerBlock(MineLyoko.MOD_ID, "uranium_ore",
             FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool(), BLOCK_GROUP);
 
+    public static final RegistryKey<PlacedFeature> URANIUM_ORE_PLACED = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(MineLyoko.MOD_ID,"uranium_ore"));
+
     public static final Block ALUMINUM_ORE = new CustomBlock().registerBlock(MineLyoko.MOD_ID, "aluminum_ore",
             FabricBlockSettings.of(Material.STONE).strength(1f).requiresTool(), BLOCK_GROUP);
+
+    public static final RegistryKey<PlacedFeature> ALUMINUM_ORE_PLACED = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(MineLyoko.MOD_ID,"aluminum_ore"));
 
 }
